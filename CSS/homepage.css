@@ -1,0 +1,75 @@
+body{
+        background-color: rgb(241, 238, 238);
+}
+
+#navbar-logo{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.immagine-anteprima{
+    border-radius: 5px;
+    border: solid #212529 2px;
+}
+
+.anteprima-guida{
+
+    color: black;
+
+}
+
+.titolo{
+    margin-bottom: 25px;
+    background-color:#212529;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(112, 14, 20);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+  
+#top-btn:hover {
+    background-color: #121416;
+}
+
+#footer{
+
+    background-color:#212529;
+    color: #f8f9fa;
+
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}

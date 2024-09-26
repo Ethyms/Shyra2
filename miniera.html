@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="CSS/stryle.css">
+
+    
+    <title>Shyra online - guida</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+            <img id="navbar-icon" src="images/icon.png" alt="shyra-logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">Shyra guida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                    Mappe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="capitale-di-shyra.html">Capitale di Shyra</a></li>
+                        <li><a class="dropdown-item" href="valle-degli-orchi.html">Valle degli orchi</a></li>
+                        <li><a class="dropdown-item" href="piana-esoterica.html">Piana esoterica</a></li>
+                        <li><a class="dropdown-item" href="sentiero-magico.html">Sentiero magico</a></li>
+                        <li><a class="dropdown-item" href="monte-ghiacciato.html">Monte ghiacciato</a></li>
+                        <li><a class="dropdown-item" href="tempio-hwang.html">Tempio Hwang</a></li>
+                        <li><a class="dropdown-item" href="#">Sabbie della sofferenza</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Mappe speciali</a></li>
+                        <li><a class="dropdown-item" href="#">Miniera</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dungeon
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Cava brutale</a></li>
+                        <li><a class="dropdown-item" href="#">Sotter.infetto</a></li>
+                        <li><a class="dropdown-item" href="#">Rovine antiche</a></li>
+                        <li><a class="dropdown-item" href="#">Terra dannata</a></li>
+                        <li><a class="dropdown-item" href="#">Piramide antica</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    System
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Calendario eventi</a></li>
+                        <li><a class="dropdown-item" href="#">Utility personaggio</a></li>
+                        <li><a class="dropdown-item" href="#">Agevolazioni gameplay</a></li>
+                        <li><a class="dropdown-item" href="#">Potenziamenti</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Sistema creatore</a></li>
+                    </ul>
+                </li>
+                <a class="nav-link" href="faq.html">FAQ</a>
+
+                </ul>
+                <div class="btn-group d-flex">
+                    <button type="button" id = "esplora" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Esplora
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Homepage</a></li>
+                      <li><a class="dropdown-item" href="#">Download</a></li>
+                      <li><a class="dropdown-item" href="#">Classifica giocatori</a></li>
+                      <li><a class="dropdown-item" href="#">Classifica gilde</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Discord <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                      <li><a class="dropdown-item" href="#">Youtube <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                      <li><a class="dropdown-item" href="#">Instagram <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                      <li><a class="dropdown-item" href="#">Facebook <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        
+        <main id = "contenuto" class="container">
+            <nav id="indice" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                <h3>Indice</h3>
+                <nav class="nav nav-pills flex-column">
+                    <ol>
+                        <li><a class="nav-link" href="#intro">Introduzione</a></li>
+                        <li><a class="nav-link" href="#drop-mostri">Giacimenti</a></li>
+                    </ol>
+                </nav>
+              </nav>
+              
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" id="testo">
+                <h1 id="titolo">Miniera</h1>
+                <img src = "images/mappe/miniera/miniera.png" class = "screen-mappa">
+                <p id="item-1"></p>
+                <h3>Spiegazione</h3>
+                <p>Per accedervi sarà necessario essere livello 50 e spendere 10KK yang. Quì avrete la possibilità di raccogliere i minerali da inserire negli slot per migliorare l'equipaggiamento.</p>
+                    
+
+                <h3 id="drop-mostri" class="titolo-sezione">Giacimenti</h3>
+                <p>Clickando col tasto destro del mouse su un giacimento inizierete ad attaccarlo fino a romperlo del tutto. Una volta distrutto verrà rilscito il drop, ovvero, i minerali.</p>
+
+                    <img src = "images/mappe/miniera/drop.gif" id = "img1" class= "popup-img"alt = "Giacimenti">
+
+                    <div id="myModal" class="modal">
+                    
+                        <span class="close">&times;</span>
+                
+                        <img class="modal-content" id="img-extended">
+                
+                        <div id="caption"></div>
+                    </div>
+                <br>
+
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Mostra lista drop
+
+                        <div id="myModal" class="modal">
+                        
+                            <span class="close">&times;</span>
+                    
+                            <img class="modal-content" id="img-extended">
+                    
+                            <div id="caption"></div>
+                        </div>
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          <ul>
+                            <img src = "images/mappe/miniera/minerali.png" id = "img1" class= "popup-img"alt = "Giacimenti">
+
+                            <li>Etereo 70+</li>
+                            <li>Divino 75+</li>
+                            <li>Rovente 115+</li>
+                            <li>Celestiale 125+</li>
+                          </ul>
+                        </div>
+                    </div>
+
+        </main>
+
+        <button onclick="topFunction()" id="top-btn" title="Go to top"><img src="images/freccia-su.PNG" alt="Top" height= "25px" width = "25px"></button>
+
+        <div style="clear: both;"></div>
+        <div class="container-fluid">
+            <footer id = "footer" class="row row-cols-5 py-5 my-5 border-top">
+              <div class="col">
+                <a href="/" class="d-flex align-items-center mb-3 link-lite text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <p class="text-muted">&copy; Shyra online</p>
+              </div>
+          
+              <div class="col">
+          
+              </div>
+          
+              <div class="col">
+                <h5>Mappe</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Capitale di Shyra</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valle degli orchi</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piana esoterica</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sentiero magico</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Monte ghiacciato</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tempio Hwang</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sabbie della sofferenza</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mappe speciali</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miniera</a></li>
+                </ul>
+              </div>
+
+          
+              <div class="col">
+                <h5>Dungeon</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cava brutale</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sotter.infetto</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rovine antiche</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terra dannata</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piramide antica</a></li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <h5>System</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Calendario eventi</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Utility personaggio</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agevolazioni gameplay</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Potenziamenti</a></li>
+                  <li class="nav-item mb-2"><span class="nav-link p-0 text-muted">Sistema creatore</span></li>
+                </ul>
+              </div>
+
+            </footer>
+          </div>
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="JS/popup.js"></script>
+        <script src="JS/top-btn.js"></script>
+
+</body>
+</html>

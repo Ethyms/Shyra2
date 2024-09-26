@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="CSS/stryle.css">
+
+    
+    <title>Shyra online - guida</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+            <img id="navbar-icon" src="images/icon.png" alt="shyra-logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">Shyra guida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                    Mappe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="capitale-di-shyra.html">Capitale di Shyra</a></li>
+                        <li><a class="dropdown-item" href="valle-degli-orchi.html">Valle degli orchi</a></li>
+                        <li><a class="dropdown-item" href="piana-esoterica.html">Piana esoterica</a></li>
+                        <li><a class="dropdown-item" href="sentiero-magico.html">Sentiero magico</a></li>
+                        <li><a class="dropdown-item" href="monte-ghiacciato.html">Monte ghiacciato</a></li>
+                        <li><a class="dropdown-item" href="tempio-hwang.html">Tempio Hwang</a></li>
+                        <li><a class="dropdown-item" href="sabbie-della-sofferenza.html">Sabbie della sofferenza</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Mappe speciali</a></li>
+                        <li><a class="dropdown-item" href="#">Miniera</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dungeon
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Cava brutale</a></li>
+                        <li><a class="dropdown-item" href="#">Sotter.infetto</a></li>
+                        <li><a class="dropdown-item" href="#">Rovine antiche</a></li>
+                        <li><a class="dropdown-item" href="#">Terra dannata</a></li>
+                        <li><a class="dropdown-item" href="#">Piramide antica</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    System
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Calendario eventi</a></li>
+                        <li><a class="dropdown-item" href="#">Utility personaggio</a></li>
+                        <li><a class="dropdown-item" href="#">Agevolazioni gameplay</a></li>
+                        <li><a class="dropdown-item" href="#">Potenziamenti</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Sistema creatore</a></li>
+                    </ul>
+                </li>
+                <a class="nav-link" href="faq.html">FAQ</a>
+
+                </ul>
+                <div class="btn-group d-flex">
+                    <button type="button" id = "esplora" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Esplora
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Homepage</a></li>
+                      <li><a class="dropdown-item" href="#">Download</a></li>
+                      <li><a class="dropdown-item" href="#">Classifica giocatori</a></li>
+                      <li><a class="dropdown-item" href="#">Classifica gilde</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Discord <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                      <li><a class="dropdown-item" href="#">Youtube <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                      <li><a class="dropdown-item" href="#">Instagram <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                      <li><a class="dropdown-item" href="#">Facebook <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        
+        <main id = "contenuto" class="container">
+            <nav id="indice" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                <h3>Indice</h3>
+                <nav class="nav nav-pills flex-column">
+                    <ol>
+                        <li><a class="nav-link" href="#intro">Introduzione</a></li>
+                        <li><a class="nav-link" href="#drop-mostri">Drop mostri</a></li>
+                            <ul>
+                                <li><a class="nav-link" href="#libellula-del-deserto">Libellula del deserto</a></li>
+                                <li><a class="nav-link" href="#piccolo-drago-di-pietra">Piccolo Drago di Pietra</a></li>
+                                <li><a class="nav-link" href="#scarabeo-del-deserto">Scarabeo del Deserto</a></li>
+                                <li><a class="nav-link" href="#scarabeo-velenoso">Scarabeo Velenoso</a></li>
+                            </ul>
+                        <li><a class="nav-link" href="#metin">Metin</a></li>
+                        <ul>
+                            <li><a class="nav-link" href="#metin-del-deserto">Metin del Deserto</a></li>
+                            <li><a class="nav-link" href="#metin-spinosa">Metin Spinosa</a></li>
+                            <li><a class="nav-link" href="#metin-della-mummia">Metin della Mummia</a></li>
+                        </ul>
+                        <li><a class="nav-link" href="#boss">Boss</a></li>
+                        <ul>
+                            <li><a class="nav-link" href="#creatura-del-deserto">Creatura del deserto</a></li>
+                            <li><a class="nav-link" href="#ombra-di-anubi">Ombra di Anubi</a></li>
+                            <li><a class="nav-link" href="#brutale-antico-naga">Brutale antico Naga</a></li>
+                        </ul>
+                    </ol>
+                </nav>
+              </nav>
+              
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" id="testo">
+                <h1 id="titolo">Sabbie della sofferenza [lv 125 - 130]</h1>
+                <img src = "images/mappe/sabbie-della-sofferenza/screen_mappa.png" class = "screen-mappa">
+                <p id="item-1"></p>
+                <h3>Introduzione</h3>
+                <p>
+                  Per accedere a questa mappa dovete essere almeno livello 125 e dovete rimanere qui fino al raggiungimento del <strong>livello 130</strong>. <u>(se oltrepassi il livello massimo non potrete più accedervi)</u>
+                  Per andare in questa mappa è molto semplice, vi basterà andare nella <u>zona lobby</u>, che si trova alla <a href="capitale-di-shyra.html">capitale</a>, e parlare con l'NPC "<strong>Gardiano Sabbie [125 - 130]</strong>"che si trova alla capitale e consegnrgli un Moneta Hwang.
+                  Qui avrete la possibilità di ottenere le vostre cinture PVP e migliorarle fino al grado Mistico. 
+                </p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </symbol>
+                        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                        </symbol>
+                        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </symbol>
+                    </svg>
+                      
+                    <div class="alert alert-primary d-flex align-items-center" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                        <div id="item-2">
+                          Questa è la mappa finale del gioco, quindi oltre ad avere il set finale con raffinati dovrete avere la cintura PVM al grado mistico, inoltre è richiesto anche il buff Leggendario di una shamy drago. Come equip si consiglia forte vs Animali e Zombie. 
+                        </div>
+                    </div>
+                    
+
+                <h3 id="drop-mostri" class="titolo-sezione">Drop mostri</h3>
+                <p>Dalla Libellula del deserto e dal Piccolo Drago di Pietra otterrete la Cinghia Arancione e la Cinghia Blu utile per migliorare le cintura PVP.
+                  Dallo Scarabeo del Deserto otterete il libro missioni mostri.
+                  Infine, dallo Scarabeo Velenoso droppetrete la Cinghia Rosa e la Cinghia Verde utile per migliorare le cinture PVP e la Reliquia della Crudeltà utile per il completamento della missione del Biologo.</p>
+
+                <h4 id = "libellula-del-deserto">Libellula del deserto</h4>
+                    <img src = "images/mappe/sabbie-della-sofferenza/libellula-del-deserto.gif" id = "img1" class= "popup-img"alt = "Libellula del deserto">
+
+                    <div id="myModal" class="modal">
+                    
+                        <span class="close">&times;</span>
+                
+                        <img class="modal-content" id="img-extended">
+                
+                        <div id="caption"></div>
+                    </div>
+                <br>
+
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Mostra lista drop
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          <ul>
+                            <li>Tutti i fiori</li>
+                            <li>Cinghia Arancione</li>
+                            <li>Cinghia Blu</li>
+                            <li>Monete da 55k yang</li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+
+                    <h4 id = "piccolo-drago-di-pietra">Piccolo Drago di Pietra</h4>
+
+                    <img src = "images/mappe/sabbie-della-sofferenza/piccolo-drago-di-pietra.gif" id = "img2" class= "popup-img"alt = "Piccolo Drago di Pietra">
+
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            Mostra lista drop
+                        </button>
+                    </p>
+    
+                    <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                              <ul>
+                                <li>Tutti i fiori</li>
+                                <li>Cinghia Arancione</li>
+                                <li>Cinghia Blu</li>
+                                <li>Monete da 55k yang</li>
+                              </ul>
+                            </div>
+                        </div>
+    
+                    <br>
+                    <hr>
+                    
+    
+                    <h4 id = "scarabeo-del-deserto">Scarabeo del Deserto</h4>
+    
+                    <img src = "images/mappe/sabbie-della-sofferenza/scarabeo-del-deserto.gif" id = "img3" class= "popup-img"alt = "Scarabeo del Deserto">
+                    <div id="myModal" class="modal">
+                    
+                        <span class="close">&times;</span>
+                
+                        <img class="modal-content" id="img-extended">
+                
+                        <div id="caption"></div>
+                    </div>
+                    <br>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            Mostra lista drop
+                        </button>
+                    </p>
+    
+                    <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                              <ul>
+                                <li>Papiro consacrato</li>
+                                <li>Tutti i fiori</li>
+                                <li>Libro missioni mostri</li>
+                                <li>Monete 55k yang</li>
+                              </ul>
+                            </div>
+                        </div>
+                    <br>
+                        <hr>
+                        <h4 id = "scarabeo-velenoso">Scarabeo Velenoso</h4>
+    
+                        <img src = "images/mappe/sabbie-della-sofferenza/scarabeo-velenoso.gif" id = "img6" class= "popup-img"alt = "Scarabeo Velenoso">
+                        <div id="myModal" class="modal">
+                        
+                            <span class="close">&times;</span>
+                    
+                            <img class="modal-content" id="img-extended">
+                    
+                            <div id="caption"></div>
+                        </div>
+                        <br>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                                Mostra lista drop
+                            </button>
+                        </p>
+        
+                        <div class="collapse" id="collapseExample6">
+                                <div class="card card-body">
+                                  <ul>
+                                    <li>Cinghia rosa</li>
+                                    <li>Tutti i fiori</li>
+                                    <li>Cinghia verde</li>
+                                    <li>Reliquia della crudeltà</li>
+                                    <li>Monete 55k yang</li>
+                                  </ul>
+                                </div>
+                            </div>
+
+                        <br>
+
+                        <h4 id = "metin" class="titolo-sezione">Metin</h4>
+                        <p>                Da queste Metin sparse per tutte le Sabbie dropperete la "Cinghia Rosa, la Cinghia Blu, la Cinghia Verde, la Cinghia Arancione e la tintura bianca" utile per migliorare le Cintura PVP.
+                          Inolte potrete ottenere, anche dei lingotti da 3kk, monete da 35k, le sfere benedette, papiri Consacrati,
+                          Manuale della Conoscenza, che accomunandone 8, avrai la possibilità di craftare la "PDA Leggendaria" che vi permetterà di portare 1 skill da P1 al grado L.
+                          Il forziere dio drago, dove all'interno troverete gli aiuti del dio drago e lotte critiche e trafiggenti e tanto altro ancora.
+                          e il libro missioni metin, che una volta avendoci cliccato vi consegnerà una quest dove di dirà di distruggere le metin (il quantitativo sarà randomico).
+                          Il papiro dell'esorcismo, per poter leggere la PDA Leggendaria, il fagiolo zen, per ridurre il karma negativo,
+                          La Pietra Spirituale, utile per il craft delle pietre dal grado Antico al grado Leggendario.
+                          e tutte le pietre di grado L, e la medaglia hwang per accedere alla mappa.</p>
+
+                        <h4 id = "metin-del-deserto">Metin del Deserto</h4>
+                        <img src = "images/mappe/sabbie-della-sofferenza/metin-del-deserto.gif" id = "img4" class= "popup-img"alt = "Metin del Deserto">
+        
+                            <div id="myModal" class="modal">
+                            
+                                <span class="close">&times;</span>
+                        
+                                <img class="modal-content" id="img-extended">
+                        
+                                <div id="caption"></div>
+                            </div>
+                        <br>
+                        <p>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                              Mostra lista drop
+                          </button>
+                      </p>
+      
+                      <div class="collapse" id="collapseExample4">
+                              <div class="card card-body">
+                                <ul>
+                                  <li>Cinghia Rosa, la Cinghia Blu, la Cinghia Verde, la Cinghia Arancione e la tintura bianca</li>
+                                  <li>Lingotti da 3kk</li>
+                                  <li>Monete da 35k</li>
+                                  <li>Sfere benedette</li>
+                                  <li>Papiri Consacrati</li>
+                                  <li>Manuale dellaa conoscenza</li>
+                                  <li>Papiro dell'esorcismo</li>
+                                  <li>Fagiolo zen</li>
+                                  <li>Medaglia Hwang</li>
+                                  <li>Pietra spirituale</li>
+                                  <li>Pergamena delle Anime (che accomunandone 20, avrai la possibilità di craftare la "Pietra delle Anime" che vi permetterà di portare 1 skill da G1 al grado P1)</li>
+                                  <li>Il forziere dio drago (dove all'interno troverete gli aiuti del dio drago e lotte critiche e trafiggenti e tanto altro ancora)</li>
+                                  <li>Il libro missioni metin</li>
+                                  <li>Tutte le pietre di grado L</li>
+                                </ul>
+                              </div>
+                          </div>
+                          <br>
+                        <hr>
+                        <h4 id = "metin-spinosa">Metin Spinosa</h4>
+                        <img src = "images/mappe/sabbie-della-sofferenza/metin-spinosa.gif" id = "img7" class= "popup-img"alt = "Metin Spinosa">
+        
+                            <div id="myModal" class="modal">
+                            
+                                <span class="close">&times;</span>
+                        
+                                <img class="modal-content" id="img-extended">
+                        
+                                <div id="caption"></div>
+                            </div>
+                        <br>
+
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
+                                    Mostra lista drop
+                                </button>
+                            </p>
+            
+                            <div class="collapse" id="collapseExample7">
+                                    <div class="card card-body">
+                                      <li>Cinghia Rosa, la Cinghia Blu, la Cinghia Verde, la Cinghia Arancione e la tintura bianca</li>
+                                      <li>Lingotti da 3kk</li>
+                                      <li>Monete da 35k</li>
+                                      <li>Sfere benedette</li>
+                                      <li>Papiri Consacrati</li>
+                                      <li>Manuale dellaa conoscenza</li>
+                                      <li>Papiro dell'esorcismo</li>
+                                      <li>Fagiolo zen</li>
+                                      <li>Medaglia Hwang</li>
+                                      <li>Pietra spirituale</li>
+                                      <li>Pergamena delle Anime (che accomunandone 20, avrai la possibilità di craftare la "Pietra delle Anime" che vi permetterà di portare 1 skill da G1 al grado P1)</li>
+                                      <li>Il forziere dio drago (dove all'interno troverete gli aiuti del dio drago e lotte critiche e trafiggenti e tanto altro ancora)</li>
+                                      <li>Il libro missioni metin</li>
+                                      <li>Tutte le pietre di grado L</li>
+                                      </ul>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <hr>
+                                <h4 id = "metin-della-mummia">Metin della Mummia</h4>
+                                <img src = "images/mappe/sabbie-della-sofferenza/metin-mummia.gif" id = "img8" class= "popup-img"alt = "Metin della Mummia">
+                
+                                    <div id="myModal" class="modal">
+                                    
+                                        <span class="close">&times;</span>
+                                
+                                        <img class="modal-content" id="img-extended">
+                                
+                                        <div id="caption"></div>
+                                    </div>
+                                <br>
+        
+                                    <p>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">
+                                            Mostra lista drop
+                                        </button>
+                                    </p>
+                    
+                                    <div class="collapse" id="collapseExample8">
+                                            <div class="card card-body">
+                                              <ul>
+                                                <li>Cinghia Rosa, la Cinghia Blu, la Cinghia Verde, la Cinghia Arancione e la tintura bianca</li>
+                                                <li>Lingotti da 3kk</li>
+                                                <li>Monete da 35k</li>
+                                                <li>Sfere benedette</li>
+                                                <li>Papiri Consacrati</li>
+                                                <li>Manuale dellaa conoscenza</li>
+                                                <li>Papiro dell'esorcismo</li>
+                                                <li>Fagiolo zen</li>
+                                                <li>Medaglia Hwang</li>
+                                                <li>Pietra spirituale</li>
+                                                <li>Pergamena delle Anime (che accomunandone 20, avrai la possibilità di craftare la "Pietra delle Anime" che vi permetterà di portare 1 skill da G1 al grado P1)</li>
+                                                <li>Il forziere dio drago (dove all'interno troverete gli aiuti del dio drago e lotte critiche e trafiggenti e tanto altro ancora)</li>
+                                                <li>Il libro missioni metin</li>
+                                                <li>Tutte le pietre di grado L</li>
+                                              </ul>
+                                            </div>
+                                        </div>
+        
+                                        <br>
+
+
+                                <h4 id = "boss" class="titolo-sezione">Boss</h4>
+                                <p>Saranno i boss della mappa "Sabbie della Sofferenza" da essi avrete la possibilità di droppare le "Casse Pet/Mount [M]",</p>
+                                <h4 id = "creatura-del-deserto">Creatura del Deserto</h4>
+        
+                                <img id = "img5" class= "popup-img" src = "images/mappe/sabbie-della-sofferenza/creatura-del-deserto.gif" alt = "Creatura del Deserto">
+                
+                                    <div id="myModal" class="modal">
+                                    
+                                        <span class="close">&times;</span>
+                                
+                                        <img class="modal-content" id="img-extended">
+                                
+                                        <div id="caption"></div>
+                                    </div>
+                                <br>
+        
+                                    <p>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                                            Mostra lista drop
+                                        </button>
+                                    </p>
+
+                                    
+                    
+                                    <div class="collapse" id="collapseExample5">
+                                            <div class="card card-body">
+                                              <ul>
+                                                <li>Casse Pet/Mount [M]</li>
+                                                <li>Elisir del Successo</li>
+                                                <li>Elisir del Sole/Luna [S]</li>
+                                                <li>Elisir del Tempo</li>
+                                                <li>Stoffe Sottili</li>
+                                                <li>Pepita da 10kk</li>
+                                                <li>Cassa gemme</li>
+                                                <li>Forziere degli anelli</li>
+                                                <li>Forziere delle Utilità (dove dropperete gli anelli Exp, Moneta della Fortuna e tanto altro ancora)</li>
+                                                <li>Buff System (fino al grado P)</li>
+                                                <li>Essenza Spirituale</li>
+                                                <li>Tintura oro</li>
+                                                <li>Forziere delle cinture</li>
+                                                <li>Falsa Pietra Magica (che portandone 1 dal fabbro avrete la possibilità di craftare la Pietra Magica)</li>
+                                                <li>Libro missioni Boss</li>
+                                                <li>Elisir del baek-go</li>
+                                                <li>Ampliam e resetta Gaya</li>
+                                              </ul>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <h4 id = "ombra-di-anubi">Ombra di Anubi</h4>
+                
+                                        <img id = "img5" class= "popup-img" src = "images/mappe/sabbie-della-sofferenza/ombra-di-anubi.gif" alt = "Ombra di Anubi">
+                        
+                                            <div id="myModal" class="modal">
+                                            
+                                                <span class="close">&times;</span>
+                                        
+                                                <img class="modal-content" id="img-extended">
+                                        
+                                                <div id="caption"></div>
+                                            </div>
+                                        <br>
+                
+                                            <p>
+                                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample">
+                                                    Mostra lista drop
+                                                </button>
+                                            </p>
+        
+                                            
+                            
+                                            <div class="collapse" id="collapseExample9">
+                                                    <div class="card card-body">
+                                                      <ul>
+                                                        <li>Casse Pet/Mount [M]</li>
+                                                        <li>Elisir del Successo</li>
+                                                        <li>Elisir del Sole/Luna [S]</li>
+                                                        <li>Elisir del Tempo</li>
+                                                        <li>Stoffe Sottili</li>
+                                                        <li>Pepita da 10kk</li>
+                                                        <li>Cassa gemme</li>
+                                                        <li>Forziere degli anelli</li>
+                                                        <li>Forziere delle Utilità (dove dropperete gli anelli Exp, Moneta della Fortuna e tanto altro ancora)</li>
+                                                        <li>Buff System (fino al grado P)</li>
+                                                        <li>Essenza Spirituale</li>
+                                                        <li>Tintura oro</li>
+                                                        <li>Forziere delle cinture</li>
+                                                        <li>Falsa Pietra Magica (che portandone 1 dal fabbro avrete la possibilità di craftare la Pietra Magica)</li>
+                                                        <li>Libro missioni Boss</li>
+                                                        <li>Elisir del baek-go</li>
+                                                        <li>Ampliam e resetta Gaya</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <hr>
+                                                <h4 id = "brutale-antico-naga">Brutale Antico Naga</h4>
+                
+                                                <img id = "img5" class= "popup-img" src = "images/mappe/sabbie-della-sofferenza/brutale-antico-naga.gif" alt = "Brutale Antico Naga">
+                                
+                                                    <div id="myModal" class="modal">
+                                                    
+                                                        <span class="close">&times;</span>
+                                                
+                                                        <img class="modal-content" id="img-extended">
+                                                
+                                                        <div id="caption"></div>
+                                                    </div>
+                                                <br>
+                        
+                                                    <p>
+                                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">
+                                                            Mostra lista drop
+                                                        </button>
+                                                    </p>
+                
+                                                    
+                                    
+                                                    <div class="collapse" id="collapseExample10">
+                                                            <div class="card card-body">
+                                                              <ul>
+                                                                <li>Casse Pet/Mount [M]</li>
+                                                                <li>Elisir del Successo</li>
+                                                                <li>Elisir del Sole/Luna [S]</li>
+                                                                <li>Elisir del Tempo</li>
+                                                                <li>Stoffe Sottili</li>
+                                                                <li>Pepita da 10kk</li>
+                                                                <li>Cassa gemme</li>
+                                                                <li>Forziere degli anelli</li>
+                                                                <li>Forziere delle Utilità (dove dropperete gli anelli Exp, Moneta della Fortuna e tanto altro ancora)</li>
+                                                                <li>Buff System (fino al grado P)</li>
+                                                                <li>Essenza Spirituale</li>
+                                                                <li>Tintura oro</li>
+                                                                <li>Forziere delle cinture</li>
+                                                                <li>Falsa Pietra Magica (che portandone 1 dal fabbro avrete la possibilità di craftare la Pietra Magica)</li>
+                                                                <li>Libro missioni Boss</li>
+                                                                <li>Elisir del baek-go</li>
+                                                                <li>Ampliam e resetta Gaya</li>
+                                                              </ul>
+                                                            </div>
+                                                        </div>
+                                                        <br>
+        </main>
+
+        <button onclick="topFunction()" id="top-btn" title="Go to top"><img src="images/freccia-su.PNG" alt="Top" height= "25px" width = "25px"></button>
+
+        <div style="clear: both;"></div>
+        <div class="container-fluid">
+            <footer id = "footer" class="row row-cols-5 py-5 my-5 border-top">
+              <div class="col">
+                <a href="/" class="d-flex align-items-center mb-3 link-lite text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <p class="text-muted">&copy; Shyra online</p>
+              </div>
+          
+              <div class="col">
+          
+              </div>
+          
+              <div class="col">
+                <h5>Mappe</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Capitale di Shyra</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valle degli orchi</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piana esoterica</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sentiero magico</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Monte ghiacciato</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tempio Hwang</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sabbie della sofferenza</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mappe speciali</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miniera</a></li>
+                </ul>
+              </div>
+
+          
+              <div class="col">
+                <h5>Dungeon</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cava brutale</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sotter.infetto</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rovine antiche</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terra dannata</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piramide antica</a></li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <h5>System</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Calendario eventi</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Utility personaggio</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agevolazioni gameplay</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Potenziamenti</a></li>
+                  <li class="nav-item mb-2"><span class="nav-link p-0 text-muted">Sistema creatore</span></li>
+                </ul>
+              </div>
+
+            </footer>
+          </div>
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="JS/popup.js"></script>
+        <script src="JS/top-btn.js"></script>
+
+</body>
+</html>

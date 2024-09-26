@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="CSS/stryle.css">
+    <link rel="stylesheet" href="CSS/npc.css">
+
+
+    <title>Shyra online - guida</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img id="navbar-icon" src="images/icon.png" alt="shyra-logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">Shyra guida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                    Mappe
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="capitale-di-shyra.html">Capitale di Shyra</a></li>
+                            <li><a class="dropdown-item" href="valle-degli-orchi.html">Valle degli orchi</a></li>
+                            <li><a class="dropdown-item" href="piana-esoterica.html">Piana esoterica</a></li>
+                            <li><a class="dropdown-item" href="sentiero-magico.html">Sentiero magico</a></li>
+                            <li><a class="dropdown-item" href="monte-ghiacciato.html">Monte ghiacciato</a></li>
+                            <li><a class="dropdown-item" href="tempio-hwang.html">Tempio Hwang</a></li>
+                            <li><a class="dropdown-item" href="sabbie-della-sofferenza.html">Sabbie della sofferenza</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Mappe speciali</a></li>
+                            <li><a class="dropdown-item" href="#">Miniera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dungeon
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Cava brutale</a></li>
+                            <li><a class="dropdown-item" href="#">Sotter.infetto</a></li>
+                            <li><a class="dropdown-item" href="#">Rovine antiche</a></li>
+                            <li><a class="dropdown-item" href="#">Terra dannata</a></li>
+                            <li><a class="dropdown-item" href="#">Piramide antica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    System
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Calendario eventi</a></li>
+                            <li><a class="dropdown-item" href="#">Utility personaggio</a></li>
+                            <li><a class="dropdown-item" href="#">Agevolazioni gameplay</a></li>
+                            <li><a class="dropdown-item" href="#">Potenziamenti</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Sistema creatore</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="btn-group d-flex">
+                    <button type="button" id="esplora" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Esplora
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Homepage</a></li>
+                        <li><a class="dropdown-item" href="#">Download</a></li>
+                        <li><a class="dropdown-item" href="#">Classifica giocatori</a></li>
+                        <li><a class="dropdown-item" href="#">Classifica gilde</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Discord</a></li>
+                        <li><a class="dropdown-item" href="#">Youtube</a></li>
+                        <li><a class="dropdown-item" href="#">Instagram</a></li>
+                        <li><a class="dropdown-item" href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <br>
+
+    <main id="contenuto" class="container">
+        <nav id="indice" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+            <h3>Indice</h3>
+            <nav class="nav nav-pills flex-column">
+                <ol>
+                    <li><a class="nav-link" href="#intro">Introduzione</a></li>
+                    <li><a class="nav-link" href="#drop-mostri">Drop mostri</a></li>
+                    <ul>
+                        <li><a class="nav-link" href="#orco-coraggioso">Orco Coraggioso</a></li>
+                        <li><a class="nav-link" href="#orco-guerriero">Orco Guerriero</a></li>
+                        <li><a class="nav-link" href="#orco-generale">Orco Generale</a></li>
+                    </ul>
+                    <li><a class="nav-link" href="#metin">Metin della Valle</a></li>
+                    <li><a class="nav-link" href="#boss">Capo orco</a></li>
+                </ol>
+            </nav>
+        </nav>
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" id="testo">
+            <h1 id="titolo">Capitale di Shyra</h1>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="bd-placeholder-img screen-mappa" src="images/mappe/capitle-di-shyra/capitale-1.png" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                        </svg>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img screen-mappa" src="images/mappe/capitle-di-shyra/capitale-2.png" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                        </svg>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img screen-mappa" src="images/mappe/capitle-di-shyra/capitale-3.png" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                        </svg>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img screen-mappa" src="images/mappe/capitle-di-shyra/capitale-4.png" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                        </svg>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img screen-mappa" src="images/mappe/capitle-di-shyra/capitale-5.png" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                        </svg>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+
+            <h3>Spiegazione</h3>
+            <p>
+                Su Shyra per la capitale è stata realizzata una mappa creata da zero che unifica i due Regni (Chunjo e Jinno). <br>
+                <br> Questa è stata pensta per essere non solo il centro dell'economia del gioco, ma anche un luogo di ritrovo per tutti i player. Designata con un tema new style che vi accompagnerà per tutta la vostra esperienza di gioco, essendo provvista
+                anche di un è lobby dungeon pizzata di fronte alla piazza del villaggio e poco distante anche la lobby dungeon. Oltre a questo ci saranno anche diverse zone inedite per gli eventi già presenti sul server.<br>
+                <br> All'interno della capitle saranno presenti tutti gli NPC necessari che permetteranno al vostro personaggio per affrontare al meglio le sfide di Shyra. Li conoscerete tramite un tutorial che vi manderà in giro a parlare con i vari
+                NPC, i quali vi consegneranno i vostri primi oggetti e vi faranno raggiungere il livello 30.<br>
+                <br> Infine, anche se dimensioni della mappa sono molto contenute, c'è tutto per far si che sia una capitale degna di rispetto.</p>
+            <div class="alert alert-warning text-center" role="alert">
+                <cite>Fatta in soli 10 mesi per 5 minuti al giorno - <strong> [COMA]HunabKu</strong> </cite>
+            </div>
+            <h3 id="npc" class="titolo-sezione">NPC</h3>
+            <h4 id="bottegaia">Bottegaia</h4>
+            <div class="row" id="npc">
+                <img src="images/npc/bottegaia.PNG" alt="Bottegaia" class="col-4" height="350">
+                <div class="col-8">
+                    Situata nella piazza centrale, dalla bottegaia potrai comprare e craftare item utilissimi per il progresso di gioco. Infatti ecco l'anteprima del suo negozio: <br>
+                    <img src="images/npc/finestra-bottegaia1.png" class="rounded mx-auto d-block popup-img">
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img-extended">
+
+                        <div id="caption"></div>
+                    </div>
+                    <br> Oltre a questo, come già detto in precedenza, c'è anche il crafting che funziona così; Clickando la sezione "Apri craft" vi comparirà una schermata che consegnando 20 sfere benedette e 10 rinforza oggetto vi crafterà il baule
+                    incantanto. Quest'ultimo contiene dei rinfronza incantati casuali e con questi a loro volta potrai craftare gli incanta oggetto a tempo (Il tempo varia da un minimo di 15m ad un massimo di 3 ore) <br>
+                    <img src="images/npc/finestra-bottegai2.jpg" class="rounded mx-auto d-block popup-img">
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img-extended">
+
+                        <div id="caption"></div>
+                    </div>
+                    <br>
+                </div>
+                <hr>
+            </div>
+            <!-- Sezione NPC -->
+            <h4 id="bottegaia">Fabbro</h4>
+            <div class="row" id="npc">
+                <img src="images/npc/Fabbro.PNG" alt="Bottegaia" class="col-4" height="200">
+                <div class="col-8">
+                    Situato nella piazza centrale, dal fabbro potrai craftare item utilissimi per il progresso di gioco. Infatti ecco l'anteprima degli oggetti che puo craftare:
+                    <img src="images/npc/Finestra Fabbro.PNG" class="rounded mx-auto d-block popup-img">
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img-extended">
+
+                        <div id="caption"></div>
+                    </div>
+                    <br>Il crafting funziona in questo modo:
+                    <br>
+                    <ul>
+                        <li>Clickando la sezione "Apri craft" vi comparirà una schermata che consegnando 1 falsa pietra magica 1 pietra magica(l'equivalente di un metallo non torna indietro quando fallisci).</li>
+                        <li>Oppure con 100 papiri ed una anima magica potrete craftare 1 pietra magica. nel resto del craft avrete la possibilità di convertire tutte le vostre pietre dal grado B al grado A in cambio di "Frammenti magici" necessari per craftare
+                            "ANIMA MAGICA".</li>
+                    </ul>
+                    <br>
+                </div>
+                <hr>
+            </div>
+            <!-- Sezione NPC -->
+            <h4 id="bottegaia">Fabbro leggendario</h4>
+            <div class="row" id="npc">
+                <img src="images/npc/Fabbro Leggendario.PNG" alt="Bottegaia" class="col-4" height="400">
+                <div class="col-8">
+                    Situato nella piazza centrale, dal fabbro leggendario potrai craftare item utilissimi per il progresso di gioco. Infatti ecco l'anteprima degli oggetti che puo craftare:
+                    <img src="images/npc/Finestra Fabbro Leggendario.PNG" class="rounded mx-auto d-block popup-img"> Potrete craftare:
+                    <ul>
+                        <li>Bozza per ali; necessaria per comprare delle ali dal npc Theowahdan.</li>
+                        <li>Gemma Supplizio; Necessaria per migliorare il set "Rovente" leggendario al grado Mistico.</li>
+                        <li>Gemma Avarizia: Necessaria per migliorare il set "Rovente" leggendario al grado Mistico.</li>
+                        <li>Gemma Oblio:; Necessaria per migliorare il set "Rovente" leggendario al grado Mistico.</li>
+                        <li>Sfera Energ. Splendente; Necessario per uppare il set Celestiale.</li>
+                        <li>Unificazione Elementale; Necessaria per migliorare il set Celestiale.</li>
+                        <li>Spirito Celestiale; Necessario per epicizzare il set divino Mistico nel set celestiale base. Ma anche per il migliorare il set celestiale di grado leggendario al grando Mistico.</li>
+                        <li>Spirito Celestiale; Necessario per epicizzare il set Divino Mistico. nel set Celestiale Base, ma anche per Migliorare il set Celestiale Leggendario al Grando Mistico.</li>
+                        <li>Inoltre potrete craftare tutte le pietre sia di grando L che M</li>
+                    </ul>
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img-extended">
+
+                        <div id="caption"></div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <hr>
+            </div>
+            <!-- Sezione NPC -->
+            <h4 id="bottegaia">Theowahdan</h4>
+            <div class="row" id="npc">
+                <img src="images/npc/Theowdhan.PNG" alt="Bottegaia" class="col-4" height="400">
+                <div class="col-8">
+                    Situato nella piazza centrale, dal fabbro leggendario potrai craftare item utilissimi per il progresso di gioco. Infatti ecco l'anteprima degli oggetti che puo craftare:
+                    <img src="images/npc/Finestra Theowhdan.PNG" class="rounded mx-auto d-block popup-img"> Potrete craftare:
+                    <ul>
+                        <li>Bozza per ali; necessaria per comprare delle ali dal npc Theowahdan.</li>
+                        <li>Gemma Supplizio; Necessaria per migliorare il set "Rovente" leggendario al grado Mistico.</li>
+                        <li>Gemma Avarizia: Necessaria per migliorare il set "Rovente" leggendario al grado Mistico.</li>
+                        <li>Gemma Oblio:; Necessaria per migliorare il set "Rovente" leggendario al grado Mistico.</li>
+                        <li>Sfera Energ. Splendente; Necessario per uppare il set Celestiale.</li>
+                        <li>Unificazione Elementale; Necessaria per migliorare il set Celestiale.</li>
+                        <li>Spirito Celestiale; Necessario per epicizzare il set divino Mistico nel set celestiale base. Ma anche per il migliorare il set celestiale di grado leggendario al grando Mistico.</li>
+                        <li>Spirito Celestiale; Necessario per epicizzare il set Divino Mistico. nel set Celestiale Base, ma anche per Migliorare il set Celestiale Leggendario al Grando Mistico.</li>
+                        <li>Inoltre potrete craftare tutte le pietre sia di grando L che M</li>
+                    </ul>
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img-extended">
+
+                        <div id="caption"></div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <hr>
+            </div>
+            <!-- Sezione NPC -->
+        </div>
+
+    </main>
+
+    <button onclick="topFunction()" id="top-btn" title="Go to top"><img src="images/freccia-su.PNG" alt="Top" height= "25px" width = "25px"></button>
+
+    <div style="clear: both;"></div>
+    <div class="container-fluid">
+        <footer id="footer" class="row row-cols-5 py-5 my-5 border-top">
+            <div class="col">
+                <a href="/" class="d-flex align-items-center mb-3 link-lite text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <p class="text-muted">&copy; Shyra online</p>
+            </div>
+
+            <div class="col">
+
+            </div>
+
+            <div class="col">
+                <h5>Mappe</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Capitale di Shyra</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valle degli orchi</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piana esoterica</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sentiero magico</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Monte ghiacciato</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tempio Hwang</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sabbie della sofferenza</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mappe speciali</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miniera</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h5>Dungeon</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cava brutale</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sotter.infetto</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rovine antiche</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terra dannata</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piramide antica</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5>System</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Calendario eventi</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Utility personaggio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agevolazioni gameplay</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Potenziamenti</a></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-muted">Sistema creatore</span></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/popup.js"></script>
+    <script src="JS/top-btn.js"></script>
+
+</body>
+
+</html>

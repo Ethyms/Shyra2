@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="CSS/stryle.css">
+
+    
+    <title>Shyra online - guida</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+            <img id="navbar-icon" src="images/icon.png" alt="shyra-logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">Shyra guida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                    Mappe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="capitale-di-shyra.html">Capitale di Shyra</a></li>
+                        <li><a class="dropdown-item" href="valle-degli-orchi.html">Valle degli orchi</a></li>
+                        <li><a class="dropdown-item" href="piana-esoterica.html">Piana esoterica</a></li>
+                        <li><a class="dropdown-item" href="sentiero-magico.html">Sentiero magico</a></li>
+                        <li><a class="dropdown-item" href="monte-ghiacciato.html">Monte ghiacciato</a></li>
+                        <li><a class="dropdown-item" href="tempio-hwang.html">Tempio Hwang</a></li>
+                        <li><a class="dropdown-item" href="#">Sabbie della sofferenza</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Mappe speciali</a></li>
+                        <li><a class="dropdown-item" href="#">Miniera</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dungeon
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Cava brutale</a></li>
+                        <li><a class="dropdown-item" href="#">Sotter.infetto</a></li>
+                        <li><a class="dropdown-item" href="#">Rovine antiche</a></li>
+                        <li><a class="dropdown-item" href="#">Terra dannata</a></li>
+                        <li><a class="dropdown-item" href="#">Piramide antica</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    System
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Calendario eventi</a></li>
+                        <li><a class="dropdown-item" href="#">Utility personaggio</a></li>
+                        <li><a class="dropdown-item" href="#">Agevolazioni gameplay</a></li>
+                        <li><a class="dropdown-item" href="#">Potenziamenti</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Sistema creatore</a></li>
+                    </ul>
+                </li>
+                <a class="nav-link" href="faq.html">FAQ</a>
+
+                </ul>
+                <div class="btn-group d-flex">
+                    <button type="button" id = "esplora" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Esplora
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Homepage</a></li>
+                      <li><a class="dropdown-item" href="#">Download</a></li>
+                      <li><a class="dropdown-item" href="#">Classifica giocatori</a></li>
+                      <li><a class="dropdown-item" href="#">Classifica gilde</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Discord</a></li>
+                      <li><a class="dropdown-item" href="#">Youtube</a></li>
+                      <li><a class="dropdown-item" href="#">Instagram</a></li>
+                      <li><a class="dropdown-item" href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        
+        <main id = "contenuto" class="container">
+            <nav id="indice" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                <h3>Indice</h3>
+                <nav class="nav nav-pills flex-column">
+                    <ol>
+                        <li><a class="nav-link" href="#intro">Introduzione</a></li>
+                        <li><a class="nav-link" href="#drop-mostri">Drop mostri</a></li>
+                            <ul>
+                                <li><a class="nav-link" href="#bestia-magica">Bestia Magica</a></li>
+                                <li><a class="nav-link" href="#ape-magica">Ape Magica</a></li>
+                                <li><a class="nav-link" href="#insetto-appestato">Insetto Appestato</a></li>
+                                <li><a class="nav-link" href="#ragno-magico">Ragno Magico</a></li>
+                            </ul>
+                        <li><a class="nav-link" href="#metin">Metin magico</a></li>
+                        <li><a class="nav-link" href="#boss">Drago Magico</a></li>
+                    </ol>
+                </nav>
+              </nav>
+              
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" id="testo">
+                <h1 id="titolo">Sentiero magico [lv 75 - 95]</h1>
+                <img src = "images/mappe/sentiero-magico/sentiero-magico.png" class = "screen-mappa">
+                <p id="item-1"></p>
+                <h3>Introduzione</h3>
+                <p>Per accedere in questa mappa dovrete essere livello 75, e rimarrete qui fino al raggiungimento del <strong>livello 95</strong> <u>(se oltrepassi questo livello non potrai piu' accederci)</u>.
+                    Per andare in questa mappa è molto semplice, vi basterà andare nella zona lobby alla <a href="capitale-di-shyra.html">capitale</a> dall'NPC "</strong>Sentiero [75 - 95]</strong>".
+                    In questa mappa avrai la possibilità di migliorare il vostro secondo ecquipaggiamento <strong>PVP (Divino)</strong> dal grado Antico al grado Mistico.</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </symbol>
+                        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                        </symbol>
+                        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </symbol>
+                    </svg>
+                      
+                    <div class="alert alert-primary d-flex align-items-center" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                        <div id="item-2">
+                            Dovrete aver completato il set Etereo Full Mistico per poter reggere. E' consigliabile un equip Forte contro Diavoli. 
+                        </div>
+                    </div>
+                    
+
+                <h3 id="drop-mostri" class="titolo-sezione">Drop mostri</h3>
+                <p>Dalla Bestia Magica vi dropperà un item molto utile, la "Goccia Magica" esso vi servirà per completare la missione del Biologo. Invece dalla Ape Magica otterete tutti il libro missioni mostri.
+                    Dall'Insetto Appestato vi dropperà anche un altro item molto utile per migliorare il vostro ecquipaggiamento PVP, l' "Anima Divina".
+                    Infine il Ragno Magico dropperà un altro item molto utile per migliorare il vostro ecquipaggiamento PVP, l' "Giada Divina". </p>
+
+                <h4 id = "bestia-magica">Bestia Magica</h4>
+                    <img src = "images/mappe/sentiero-magico/bestia-magica.gif" id = "img1" class= "popup-img"alt = "Bestia Magica">
+
+                    <div id="myModal" class="modal">
+                    
+                        <span class="close">&times;</span>
+                
+                        <img class="modal-content" id="img-extended">
+                
+                        <div id="caption"></div>
+                    </div>
+                <br>
+
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Mostra lista drop
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          <ul>
+                            <li>Tutti i fiori</li> 
+                            <li>"Goccia Magica"</li> 
+                            <li>Monete yang 35k.</li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+
+                    <h4 id = "ape-magica">Ape Magica</h4>
+
+                    <img src = "images/mappe/sentiero-magico/ape-magica.gif" id = "img2" class= "popup-img"alt = "Ape Magica">
+
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            Mostra lista drop
+                        </button>
+                    </p>
+    
+                    <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                              <ul>
+                                <li>Tutti i fiori</li> 
+                                <li>Libro missioni mostri</li>
+                                <li>yang!</li>
+                              </ul>
+                            </div>
+                        </div>
+    
+                    <br>
+                    <hr>
+                    
+    
+                    <h4 id = "insetto-appestato">Insetto Appestato</h4>
+    
+                    <img src = "images/mappe/sentiero-magico/insetto-appestato.gif" id = "img3" class= "popup-img"alt = "Insetto Appestato">
+                    <div id="myModal" class="modal">
+                    
+                        <span class="close">&times;</span>
+                
+                        <img class="modal-content" id="img-extended">
+                
+                        <div id="caption"></div>
+                    </div>
+                    <br>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            Mostra lista drop
+                        </button>
+                    </p>
+    
+                    <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                              <ul>
+                                <li>Tutti i fiori</li>
+                                <li>Anima Divina</li>
+                                <li>Monete yang 35k</li>
+                              </ul>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                    
+    
+                        <h4 id = "ragno-magico">Ragno Magico</h4>
+        
+                        <img src = "images/mappe/sentiero-magico/" id = "img6" class= "popup-img"alt = "Ragno Magico">
+                        <div id="myModal" class="modal">
+                        
+                            <span class="close">&times;</span>
+                    
+                            <img class="modal-content" id="img-extended">
+                    
+                            <div id="caption"></div>
+                        </div>
+                        <br>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                                Mostra lista drop
+                            </button>
+                        </p>
+        
+                        <div class="collapse" id="collapseExample6">
+                                <div class="card card-body">
+                                  <ul>
+                                    <li>Tutti i fiori</li>
+                                    <li>Anima Divina</li>
+                                    <li>Monete yang 35k</li>
+                                  </ul>
+                                </div>
+                            </div>
+
+                        <h4 id = "metin" class="titolo-sezione">Metin Magico</h4>
+                        <p>a queste Metin sparse per tutta il Sentiero dropperete la "Giada Divina, Anima Divina e Nucleo Divino" utile per ultimare il set Divino.</p>
+
+                        <img src = "images/mappe/sentiero-magico/metin-magico.gif" id = "img4" class= "popup-img"alt = "Metin della Valle">
+        
+                            <div id="myModal" class="modal">
+                            
+                                <span class="close">&times;</span>
+                        
+                                <img class="modal-content" id="img-extended">
+                        
+                                <div id="caption"></div>
+                            </div>
+                        <br>
+
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                                    Mostra lista drop
+                                </button>
+                            </p>
+            
+                            <div class="collapse" id="collapseExample4">
+                                    <div class="card card-body">
+                                      <ul>
+                                        <li>Giada Divina</li> 
+                                        <li>Anima Divina</li> 
+                                        <li>Nucleo Divino</li>
+                                        <li>Lingotti da 300k</li>
+                                        <li>Monete da 35k</li>
+                                        <li>Manuale della Conoscenza</li>
+                                        <li>Sfere benedette</li>
+                                        <li>forziere dio drago</li>
+                                        <li>Papiri Consacrati</li>
+                                        <li>Libro missioni metin</li>
+                                        <li>Papiro dell'esorcismo</li>
+                                        <li>Fagiolo zen</li>
+                                        <li>Pietra Spirituale</li>
+                                      </ul>
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <h4 id = "boss" class="titolo-sezione">Drago Magico</h4>
+                                <p>Sarà il boss della mappa "Sentiero Magico" da esso avrete la possibilità di droppare tutti gli item upp per il miglioramento per il set Divino </p>
+        
+                                <img id = "img5" class= "popup-img" src = "images//mappe/sentiero-magico/drago-magico.gif" alt = "Drago Magico">
+                
+                                    <div id="myModal" class="modal">
+                                    
+                                        <span class="close">&times;</span>
+                                
+                                        <img class="modal-content" id="img-extended">
+                                
+                                        <div id="caption"></div>
+                                    </div>
+                                <br>
+        
+                                    <p>
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                                            Mostra lista drop
+                                        </button>
+                                    </p>
+
+                                    
+                    
+                                    <div class="collapse" id="collapseExample5">
+                                            <div class="card card-body">
+                                              <ul>
+                                                <li>Falsa Pietra Magica</li>
+                                                <li>Libro Missioni Boss</li>
+                                                <li>Elisir del Baek-Go</li>
+                                                <li>Buff System (G)</li>
+                                                <li>Papiro Consacrato x5</li>
+                                                <li>Giada Divina x3</li>
+                                                <li>Anima Divina x3</li>
+                                                <li>Sacchetto Gemme</li>
+                                                <li>Aura Divina</li>
+                                                <li>Cert. Cavalcature & Uovo Pet [A]</li>
+                                                <li>Elisir del Successo</li>
+                                                <li>Mant. del Coraggio (3G.)</li>
+                                                <li>Elisir del Sole/Luna (G)</li>
+                                                <li>Frutto della Vita</li>
+                                                <li>Lingotto 3kk</li>
+                                                <li>Sfera Benedetta</li>
+                                                <li>Stoffe Sottili x3</li>
+                                                <li>Forziere delle Utilità</li>
+                                              </ul>
+                                            </div>
+                                        </div>
+        </main>
+
+        <button onclick="topFunction()" id="top-btn" title="Go to top"><img src="images/freccia-su.PNG" alt="Top" height= "25px" width = "25px"></button>
+
+        <div style="clear: both;"></div>
+        <div class="container-fluid">
+            <footer id = "footer" class="row row-cols-5 py-5 my-5 border-top">
+              <div class="col">
+                <a href="/" class="d-flex align-items-center mb-3 link-lite text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <p class="text-muted">&copy; Shyra online</p>
+              </div>
+          
+              <div class="col">
+          
+              </div>
+          
+              <div class="col">
+                <h5>Mappe</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Capitale di Shyra</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valle degli orchi</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piana esoterica</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sentiero magico</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Monte ghiacciato</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tempio Hwang</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sabbie della sofferenza</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mappe speciali</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miniera</a></li>
+                </ul>
+              </div>
+
+          
+              <div class="col">
+                <h5>Dungeon</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cava brutale</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sotter.infetto</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rovine antiche</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terra dannata</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piramide antica</a></li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <h5>System</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Calendario eventi</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Utility personaggio</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agevolazioni gameplay</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Potenziamenti</a></li>
+                  <li class="nav-item mb-2"><span class="nav-link p-0 text-muted">Sistema creatore</span></li>
+                </ul>
+              </div>
+
+            </footer>
+          </div>
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="JS/popup.js"></script>
+        <script src="JS/top-btn.js"></script>
+
+</body>
+</html>

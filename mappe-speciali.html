@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/mappe-speciali.css">
+
+
+    <title>Shyra online - guida</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img id="navbar-icon" src="images/icon.png" alt="shyra-logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">Shyra guida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                    Mappe
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="capitale-di-shyra.html">Capitale di Shyra</a></li>
+                            <li><a class="dropdown-item" href="valle-degli-orchi.html">Valle degli orchi</a></li>
+                            <li><a class="dropdown-item" href="piana-esoterica.html">Piana esoterica</a></li>
+                            <li><a class="dropdown-item" href="sentiero-magico.html">Sentiero magico</a></li>
+                            <li><a class="dropdown-item" href="monte-ghiacciato.html">Monte ghiacciato</a></li>
+                            <li><a class="dropdown-item" href="tempio-hwang.html">Tempio Hwang</a></li>
+                            <li><a class="dropdown-item" href="#">Sabbie della sofferenza</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Mappe speciali</a></li>
+                            <li><a class="dropdown-item" href="#">Miniera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dungeon
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Cava brutale</a></li>
+                            <li><a class="dropdown-item" href="#">Sotter.infetto</a></li>
+                            <li><a class="dropdown-item" href="#">Rovine antiche</a></li>
+                            <li><a class="dropdown-item" href="#">Terra dannata</a></li>
+                            <li><a class="dropdown-item" href="#">Piramide antica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    System
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Calendario eventi</a></li>
+                            <li><a class="dropdown-item" href="#">Utility personaggio</a></li>
+                            <li><a class="dropdown-item" href="#">Agevolazioni gameplay</a></li>
+                            <li><a class="dropdown-item" href="#">Potenziamenti</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Sistema creatore</a></li>
+                        </ul>
+                    </li>
+                    <a class="nav-link" href="faq.html">FAQ</a>
+
+                </ul>
+                <div class="btn-group d-flex">
+                    <button type="button" id="esplora" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Esplora
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Homepage</a></li>
+                        <li><a class="dropdown-item" href="#">Download</a></li>
+                        <li><a class="dropdown-item" href="#">Classifica giocatori</a></li>
+                        <li><a class="dropdown-item" href="#">Classifica gilde</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Discord <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                        <li><a class="dropdown-item" href="#">Youtube <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                        <li><a class="dropdown-item" href="#">Instagram <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                        <li><a class="dropdown-item" href="#">Facebook <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"/>
+                      </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <br>
+
+    <main id="contenuto" class="container">
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" id="testo">
+
+            <h1 id="titolo">Mappe speciali</h1>
+            <img src="images/mappe-speciali/mappe-scpeciali.png" class="screen-mappa">
+            <h3>Spiegazione</h3>
+            Le mappe saranno accessibili dal 115+ e per accedervi dovrete recrvi dall'NPC "<strong>Viandante 115+</strong>" nella <u>lobby dungeon</u>, che si trova alla <a href="capitale-di-shyra.html">capitale</a>). Per poter accedere ad una delle sei
+            mappe speciali dovrete pagare 35kk per l’ingresso. Ogni boss dropperà un item specifico che permettrà il craft delle anime del potere
+
+            <br>
+            <br>
+
+            <h3 id="drop-mostri" class="titolo-sezione">Elenco mappe</h3>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/mappe-speciali/giardino-del-tormento.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong><u>Giardino del tormento</u></strong></h5>
+                            <p class="card-text">
+                                <p class="card-text">
+                                    <strong>Drop unico</strong>: Pozione del tormento <br>
+                                    <strong>Boss</strong>: Distruttore tormentato
+                                    <br>
+                                    <br>
+
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                           			Apri &raquo;
+                         		</button>
+
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Giardino del tormento</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="screen-mappa" src="images/mappe-speciali/giardino-del-tormento.png">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+														<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+														<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+														</symbol>
+														<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+														<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+														</symbol>
+														<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+														<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+														</symbol>
+													</svg>
+                                                    <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                        <div id="item-2">
+                                                            Bonus consigliato forte contro diavoli
+                                                        </div>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+													<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+													  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+													</symbol>
+													<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+													  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+													</symbol>
+													<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+													  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+													</symbol>
+												</svg>
+                                                    <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                        <div id="item-2">
+                                                            Inserie consiglio
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="titolo-sezione">Distruttore tormentato</h3>
+                                                    <img id="img1" class="popup-img" src="images/mappe-speciali/drop-giardino-del-tormento.gif" alt="Distruttore tormentato">
+                                                    <p>
+                                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                        			Mostra lista drop
+                                    				</button>
+                                                    </p>
+
+                                                    <div class="collapse" id="collapseExample1">
+                                                        <div class="card card-body">
+                                                            <ul>
+                                                                <li>Manuale bloccabonus</li>
+                                                                <li>Pietra aggiungi tempo 1 (giorno)</li>
+                                                                <li>Pietra aggiungi tempo 3 (giorno)</li>
+                                                                <li>Pietra aggiungi tempo 7 (giorno)</li>
+                                                                <li>Forziere dei titoli [F]</li>
+                                                                <li>Forziere dei titoli [M]</li>
+                                                                <li>Elisir del Beak-go</li>
+                                                                <li>Riflessione (P)</li>
+                                                                <li>Aiuto del drago (P)</li>
+                                                                <li>Benedizione (P)</li>
+                                                                <li>Sacchetto gemme</li>
+                                                                <li>Gemma</li>
+                                                                <li>Elisir del tempo</li>
+                                                                <li>Elisir del successo</li>
+                                                                <li>3X Forziere del dio drago</li>
+                                                                <li>Essenza spirituale</li>
+                                                                <li>Ampliam. negozio di Gaya</li>
+                                                                <li>Forziere degli anelli</li>
+                                                                <li>Resetta negozio di Gaya</li>
+                                                                <li>Pietra magica</li>
+                                                                <li>Uovo pet [M]</li>
+                                                                <li>Certif. cavalcature [M]</li>
+                                                                <li>Mant. del coraggio (30g)</li>
+                                                                <li>Elisir della luna (S)</li>
+                                                                <li>Elisir del sole (S)</li>
+                                                                <li>Frutto della vita</li>
+                                                                <li>Pepita 10KK</li>
+                                                                <li>3X Sfera benedetta</li>
+                                                                <li>Nucleo</li>
+                                                                <li>Pozione del tormento</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </p>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 1-->
+
+                <div class="col">
+                    <div class="card">
+                        <img src="images/mappe-speciali/sala-dell-inganno.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong><u>Sala dell'inganno</u></strong></h5>
+                            <p class="card-text">
+                                <p class="card-text">
+                                    <strong>Drop unico</strong>: Pozione dell'inganno <br>
+                                    <strong>Boss</strong>: Troll ingannevole
+                                    <br>
+                                    <br>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+						Apri &raquo;
+				  	</button>
+
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel2">Sala dell'inganno</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="screen-mappa" src="images/mappe-speciali/sala-dell-inganno.png">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+														<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+														<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+														</symbol>
+														<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+														<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+														</symbol>
+														<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+														<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+														</symbol>
+													</svg>
+                                                    <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                        <div id="item-2">
+                                                            Bonus consigliato forte contro esoterici
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="titolo-sezione">Distruttore tormentato</h3>
+                                                    <img id="img1" class="popup-img" src="images/mappe-speciali/drop-sala-dell-inganno.gif" alt="Distruttore tormentato">
+                                                    <p>
+                                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+										Mostra lista drop
+										</button>
+                                                    </p>
+
+                                                    <div class="collapse" id="collapseExample1">
+                                                        <div class="card card-body">
+                                                            <ul>
+                                                                <li>Manuale bloccabonus</li>
+                                                                <li>Pietra aggiungi tempo 1 (giorno)</li>
+                                                                <li>Pietra aggiungi tempo 3 (giorno)</li>
+                                                                <li>Pietra aggiungi tempo 7 (giorno)</li>
+                                                                <li>Forziere dei titoli [F]</li>
+                                                                <li>Forziere dei titoli [M]</li>
+                                                                <li>Elisir del Beak-go</li>
+                                                                <li>Riflessione (P)</li>
+                                                                <li>Aiuto del drago (P)</li>
+                                                                <li>Benedizione (P)</li>
+                                                                <li>Sacchetto gemme</li>
+                                                                <li>Gemma</li>
+                                                                <li>Elisir del tempo</li>
+                                                                <li>Elisir del successo</li>
+                                                                <li>3X Forziere del dio drago</li>
+                                                                <li>Essenza spirituale</li>
+                                                                <li>Ampliam. negozio di Gaya</li>
+                                                                <li>Forziere degli anelli</li>
+                                                                <li>Resetta negozio di Gaya</li>
+                                                                <li>Pietra magica</li>
+                                                                <li>Uovo pet [M]</li>
+                                                                <li>Certif. cavalcature [M]</li>
+                                                                <li>Mant. del coraggio (30g)</li>
+                                                                <li>Elisir della luna (S)</li>
+                                                                <li>Elisir del sole (S)</li>
+                                                                <li>Frutto della vita</li>
+                                                                <li>Pepita 10KK</li>
+                                                                <li>3X Sfera benedetta</li>
+                                                                <li>Nucleo</li>
+                                                                <li>Pozione dell'inganno</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </p>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/mappe-speciali/abisso-dell-inferno.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong><u>Abisso dell'inferno</u></strong></h5>
+                            <p class="card-text">
+                                <strong>Drop unico</strong>: Pozione infernale <br>
+                                <strong>Boss</strong>: Guardiano degli inferi
+                                <br>
+                                <br>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+			Apri &raquo;
+		  </button>
+
+                                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Abisso dell'inferno</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="screen-mappa" src="images/mappe-speciali/abisso-dell-inferno.png">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+													<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+													</symbol>
+													<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+													</symbol>
+													<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+													</symbol>
+												</svg>
+                                                <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                    <div id="item-2">
+                                                        Bonus consigliato forte contro diavoli
+                                                    </div>
+                                                </div>
+                                                <h3 class="titolo-sezione">Abisso dell'inferno</h3>
+                                                <img id="img1" class="popup-img" src="images/mappe-speciali/drop-abisso-dell-inferno.gif" alt="Abisso dell'inferno">
+
+                                                <p>
+                                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+						Mostra lista drop
+					</button>
+                                                </p>
+
+                                                <div class="collapse" id="collapseExample3">
+                                                    <div class="card card-body">
+                                                        <ul>
+                                                            <li>Manuale bloccabonus</li>
+                                                            <li>Pietra aggiungi tempo 1 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 3 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 7 (giorno)</li>
+                                                            <li>Forziere dei titoli [F]</li>
+                                                            <li>Forziere dei titoli [M]</li>
+                                                            <li>Elisir del Beak-go</li>
+                                                            <li>Riflessione (P)</li>
+                                                            <li>Aiuto del drago (P)</li>
+                                                            <li>Benedizione (P)</li>
+                                                            <li>Sacchetto gemme</li>
+                                                            <li>Gemma</li>
+                                                            <li>Elisir del tempo</li>
+                                                            <li>Elisir del successo</li>
+                                                            <li>3X Forziere del dio drago</li>
+                                                            <li>Essenza spirituale</li>
+                                                            <li>Ampliam. negozio di Gaya</li>
+                                                            <li>Forziere degli anelli</li>
+                                                            <li>Resetta negozio di Gaya</li>
+                                                            <li>Pietra magica</li>
+                                                            <li>Uovo pet [M]</li>
+                                                            <li>Certif. cavalcature [M]</li>
+                                                            <li>Mant. del coraggio (30g)</li>
+                                                            <li>Elisir della luna (S)</li>
+                                                            <li>Elisir del sole (S)</li>
+                                                            <li>Frutto della vita</li>
+                                                            <li>Pepita 10KK</li>
+                                                            <li>3X Sfera benedetta</li>
+                                                            <li>Nucleo</li>
+                                                            <li>Pozione infernale</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/mappe-speciali/covo-corrotto.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong><u>Covo corrotto</u></strong></h5>
+                            <p class="card-text">
+                                <strong>Drop unico</strong>: Pozione corrotta <br>
+                                <strong>Boss</strong>: Baronessa ragno corrotta
+                                <br>
+                                <br>
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+									Apri &raquo;
+								</button>
+
+                                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel4">Giardino del tormento</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="screen-mappa" src="images/mappe-speciali/covo-corrotto.png">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+													<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+													</symbol>
+													<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+													</symbol>
+													<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+													</symbol>
+												</svg>
+                                                <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                    <div id="item-2">
+                                                        Bonus consigliato forte contro animali
+                                                    </div>
+                                                </div>
+                                                <h3 class="titolo-sezione">Baronessa ragno corrotta</h3>
+                                                <img id="img1" class="popup-img" src="images/mappe-speciali/drop-covo-corrotto.gif" alt="Baronessa ragno corrotta">
+
+                                                <p>
+                                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+														Mostra lista drop
+													</button>
+                                                </p>
+
+                                                <div class="collapse" id="collapseExample4">
+                                                    <div class="card card-body">
+                                                        <ul>
+                                                            <li>Manuale bloccabonus</li>
+                                                            <li>Pietra aggiungi tempo 1 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 3 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 7 (giorno)</li>
+                                                            <li>Forziere dei titoli [F]</li>
+                                                            <li>Forziere dei titoli [M]</li>
+                                                            <li>Elisir del Beak-go</li>
+                                                            <li>Riflessione (P)</li>
+                                                            <li>Aiuto del drago (P)</li>
+                                                            <li>Benedizione (P)</li>
+                                                            <li>Sacchetto gemme</li>
+                                                            <li>Gemma</li>
+                                                            <li>Elisir del tempo</li>
+                                                            <li>Elisir del successo</li>
+                                                            <li>3X Forziere del dio drago</li>
+                                                            <li>Essenza spirituale</li>
+                                                            <li>Ampliam. negozio di Gaya</li>
+                                                            <li>Forziere degli anelli</li>
+                                                            <li>Resetta negozio di Gaya</li>
+                                                            <li>Pietra magica</li>
+                                                            <li>Uovo pet [M]</li>
+                                                            <li>Certif. cavalcature [M]</li>
+                                                            <li>Mant. del coraggio (30g)</li>
+                                                            <li>Elisir della luna (S)</li>
+                                                            <li>Elisir del sole (S)</li>
+                                                            <li>Frutto della vita</li>
+                                                            <li>Pepita 10KK</li>
+                                                            <li>3X Sfera benedetta</li>
+                                                            <li>Nucleo</li>
+                                                            <li>Pozione Pozione corrotta</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/mappe-speciali/tana-del-grifone-eterno.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong><u>Tana del grifone eterno</u></strong></h5>
+                            <p class="card-text">
+                                <strong>Drop unico</strong>: Pozione eterna <br>
+                                <strong>Boss</strong>: Grifone eterno
+                                <br>
+                                <br>
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+									Apri &raquo;
+								</button>
+
+                                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel5">Tana del grifone eterno</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="screen-mappa" src="images/mappe-speciali/tana-del-grifone-eterno.png">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+													<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+													</symbol>
+													<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+													</symbol>
+													<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+													</symbol>
+												</svg>
+                                                <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                    <div id="item-2">
+                                                        Bonus consigliato forte contro zombie
+                                                    </div>
+                                                </div>
+                                                <h3 class="titolo-sezione">Grifone eterno</h3>
+                                                <img id="img1" class="popup-img" src="images/mappe-speciali/drop-tana-del-grifone-eterno.gif" alt="Grifone eterno">
+
+                                                <p>
+                                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+														Mostra lista drop
+													</button>
+                                                </p>
+
+                                                <div class="collapse" id="collapseExample5">
+                                                    <div class="card card-body">
+                                                        <ul>
+                                                            <li>Manuale bloccabonus</li>
+                                                            <li>Pietra aggiungi tempo 1 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 3 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 7 (giorno)</li>
+                                                            <li>Forziere dei titoli [F]</li>
+                                                            <li>Forziere dei titoli [M]</li>
+                                                            <li>Elisir del Beak-go</li>
+                                                            <li>Riflessione (P)</li>
+                                                            <li>Aiuto del drago (P)</li>
+                                                            <li>Benedizione (P)</li>
+                                                            <li>Sacchetto gemme</li>
+                                                            <li>Gemma</li>
+                                                            <li>Elisir del tempo</li>
+                                                            <li>Elisir del successo</li>
+                                                            <li>3X Forziere del dio drago</li>
+                                                            <li>Essenza spirituale</li>
+                                                            <li>Ampliam. negozio di Gaya</li>
+                                                            <li>Forziere degli anelli</li>
+                                                            <li>Resetta negozio di Gaya</li>
+                                                            <li>Pietra magica</li>
+                                                            <li>Uovo pet [M]</li>
+                                                            <li>Certif. cavalcature [M]</li>
+                                                            <li>Mant. del coraggio (30g)</li>
+                                                            <li>Elisir della luna (S)</li>
+                                                            <li>Elisir del sole (S)</li>
+                                                            <li>Frutto della vita</li>
+                                                            <li>Pepita 10KK</li>
+                                                            <li>3X Sfera benedetta</li>
+                                                            <li>Nucleo</li>
+                                                            <li>Pozione eterna</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/mappe-speciali/selva-del-granchio.png" class="card-img-top" alt="Selva del granchio">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong><u>Selva del granchio</u></strong></h5>
+                            <p class="card-text">
+                                <strong>Drop unico</strong>: Pozione selvaggia <br>
+                                <strong>Boss</strong>: Granchio selvatico
+                                <br>
+                                <br>
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+									Apri &raquo;
+								</button>
+
+                                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel6">Selva del granchio</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="screen-mappa" src="images/mappe-speciali/selva-del-granchio.png">
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+													<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+													</symbol>
+													<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+													</symbol>
+													<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+													<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+													</symbol>
+												</svg>
+                                                <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                    <div id="item-2">
+                                                        Bonus consigliato forte contro animali
+                                                    </div>
+                                                </div>
+                                                <h3 class="titolo-sezione">Granchio selvatico</h3>
+                                                <img id="img1" class="popup-img" src="images/mappe-speciali/drop-selva-del-granchio.gif" alt="Granchio selvatico">
+
+                                                <p>
+                                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+					Mostra lista drop
+				</button>
+                                                </p>
+
+                                                <div class="collapse" id="collapseExample6">
+                                                    <div class="card card-body">
+                                                        <ul>
+                                                            <li>Manuale bloccabonus</li>
+                                                            <li>Pietra aggiungi tempo 1 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 3 (giorno)</li>
+                                                            <li>Pietra aggiungi tempo 7 (giorno)</li>
+                                                            <li>Forziere dei titoli [F]</li>
+                                                            <li>Forziere dei titoli [M]</li>
+                                                            <li>Elisir del Beak-go</li>
+                                                            <li>Riflessione (P)</li>
+                                                            <li>Aiuto del drago (P)</li>
+                                                            <li>Benedizione (P)</li>
+                                                            <li>Sacchetto gemme</li>
+                                                            <li>Gemma</li>
+                                                            <li>Elisir del tempo</li>
+                                                            <li>Elisir del successo</li>
+                                                            <li>3X Forziere del dio drago</li>
+                                                            <li>Essenza spirituale</li>
+                                                            <li>Ampliam. negozio di Gaya</li>
+                                                            <li>Forziere degli anelli</li>
+                                                            <li>Resetta negozio di Gaya</li>
+                                                            <li>Pietra magica</li>
+                                                            <li>Uovo pet [M]</li>
+                                                            <li>Certif. cavalcature [M]</li>
+                                                            <li>Mant. del coraggio (30g)</li>
+                                                            <li>Elisir della luna (S)</li>
+                                                            <li>Elisir del sole (S)</li>
+                                                            <li>Frutto della vita</li>
+                                                            <li>Pepita 10KK</li>
+                                                            <li>3X Sfera benedetta</li>
+                                                            <li>Nucleo</li>
+                                                            <li>Pozione selvaggia</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </main>
+
+    <button onclick="topFunction()" id="top-btn" title="Go to top"><img src="images/freccia-su.PNG" alt="Top" height= "25px" width = "25px"></button>
+
+    <div style="clear: both;"></div>
+    <div class="container-fluid">
+        <footer id="footer" class="row row-cols-5 py-5 my-5 border-top">
+            <div class="col">
+                <a href="/" class="d-flex align-items-center mb-3 link-lite text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <p class="text-muted">&copy; Shyra online</p>
+            </div>
+
+            <div class="col">
+
+            </div>
+
+            <div class="col">
+                <h5>Mappe</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Capitale di Shyra</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valle degli orchi</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piana esoterica</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sentiero magico</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Monte ghiacciato</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tempio Hwang</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sabbie della sofferenza</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mappe speciali</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miniera</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h5>Dungeon</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cava brutale</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sotter.infetto</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rovine antiche</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terra dannata</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Piramide antica</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5>System</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Calendario eventi</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Utility personaggio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agevolazioni gameplay</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Potenziamenti</a></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-muted">Sistema creatore</span></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/popup.js"></script>
+    <script src="JS/top-btn.js"></script>
+
+</body>
+
+</html>
